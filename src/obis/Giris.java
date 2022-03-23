@@ -15,25 +15,25 @@ public class Giris extends Mesaj{
     }
 
     public void girisYap() {
-        System.out.println(girisKullanici());
+        System.out.println(girisKullaniciMSG());
         Scanner girisScan = new Scanner(System.in);
         logKullanici = girisScan.nextLine();
         if (girisbilgi.containsKey(logKullanici)) {//giriş bilgileri değeri içeriyor mu diye bakıyor
             boolean b = false;
             do {
 
-                System.out.println(girisSifre());
+                System.out.println(girisSifreMSG());
                 logSifre = girisScan.nextLine();
                 if (girisbilgi.get(logKullanici).equals(logSifre)) {
-                    System.out.println(girisBasarili());
+                    System.out.println(girisBasariliMSG());
                     cevrimici = true;
                     b = true;
                 } else {
-                    System.out.println(girisHatali());
+                    System.out.println(girisHataliMSG());
                 }
             } while (!b);
         } else {
-            System.out.println(girisBulunamadi());
+            System.out.println(girisBulunamadiMSG());
         }
     }
 
