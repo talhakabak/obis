@@ -1,32 +1,22 @@
 package obis;
 
 
-public class Mesaj extends Main {
-    public String mainAcilis() {//Main
-        return "Öğrenci Bilgi Sistemine Hoşgeldiniz";
-    }
+public class Mesaj {
+    public static String mainAcilis() { return "Öğrenci Bilgi Sistemine Hoşgeldiniz"; }
 
-    public String mainCevrimici(String kullaniciadi) {
-        return "Hoşgeldin " + kullaniciadi;
-    }
+    public static String mainCevrimici(String kullaniciadi) { return "Hoşgeldin " + kullaniciadi; }
 
-    public String girisKullanici() {
-        return "Lütfen giriş yapmak için kullanıcı adınızı giriniz:";
-    }
+    public static String girisKullanici() { return "Lütfen giriş yapmak için kullanıcı adınızı giriniz:"; }
 
-    public String girisBulunamadi() {
-        return "Kullanıcı adı bulunamadı.";
-    }
+    public static String girisBulunamadi() { return "Kullanıcı adı bulunamadı."; }
 
-    public String girisSifre() {
-        return "Lütfen şifrenizi giriniz:";
-    }
+    public static String girisSifre() { return "Lütfen şifrenizi giriniz:"; }
 
-    public String girisBasarili() {
+    public static String girisBasarili() {
         return "Giriş başarılı.";
     }
 
-    public String girisHatali() {
+    public static String girisHatali() {
         return "Şifre yanlış girildi.";
     }
 

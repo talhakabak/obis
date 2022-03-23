@@ -4,8 +4,7 @@ package obis;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Giris {
-    Mesaj mesaj = new Mesaj();
+public class Giris extends Mesaj{
     HashMap<String, String> girisbilgi;
     String logKullanici;
     String logSifre;
@@ -16,25 +15,25 @@ public class Giris {
     }
 
     public void girisYap() {
-        System.out.println(mesaj.girisKullanici());
+        System.out.println(girisKullanici());
         Scanner girisScan = new Scanner(System.in);
         logKullanici = girisScan.nextLine();
         if (girisbilgi.containsKey(logKullanici)) {//giriş bilgileri değeri içeriyor mu diye bakıyor
             boolean b = false;
             do {
 
-                System.out.println(mesaj.girisSifre());
+                System.out.println(girisSifre());
                 logSifre = girisScan.nextLine();
                 if (girisbilgi.get(logKullanici).equals(logSifre)) {
-                    System.out.println(mesaj.girisBasarili());
+                    System.out.println(girisBasarili());
                     cevrimici = true;
                     b = true;
                 } else {
-                    System.out.println(mesaj.girisHatali());
+                    System.out.println(girisHatali());
                 }
             } while (!b);
         } else {
-            System.out.println(mesaj.girisBulunamadi());
+            System.out.println(girisBulunamadi());
         }
     }
 
