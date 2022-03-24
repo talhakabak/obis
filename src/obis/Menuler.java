@@ -1,9 +1,11 @@
 package obis;
 
+import admin.Database;
+
 import java.util.Scanner;
 
 public class Menuler extends Mesaj {
-    Admin DB = new Admin();
+    Database DB = new Database();
     String[] kullanici;
     Menuler(String[] i) {
         kullanici = i;
