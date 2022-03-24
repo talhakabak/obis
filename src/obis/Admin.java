@@ -7,4 +7,5 @@ public class Admin {
     String[] duyuru3 =  {"BT","Etkinlik","'Bilgisayar Teknolojisi' bölümünün katılması önerilen seminer yarın 16:00'da"};
     String[] duyuru4 =  {"BP","Etkinlik","'Bilgisayar Programcılığı' bölümünün katılması önerilen seminer yarın 16:00'da"};
     String[][] duyurular = {duyuru,duyuru1,duyuru2,duyuru3,duyuru4};
+
 }

@@ -41,6 +41,8 @@ public class Menuler extends Mesaj {
                 }
             }
         }
+        bekle(3000);
+        menuSecim();
     }
 
     public void notlar() {
