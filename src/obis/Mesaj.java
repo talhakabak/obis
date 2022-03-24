@@ -2,39 +2,39 @@ package obis;
 
 
 public class Mesaj {
-    public static String mainAcilisMSG() {
+    public static String mainAcilis() {
         return "Öğrenci Bilgi Sistemine Hoşgeldiniz";
     }
 
-    public static String mainCevrimiciMSG(String kullaniciadi) {
+    public static String mainCevrimici(String kullaniciadi) {
         return "Hoşgeldin " + kullaniciadi;
     }
 
-    public static String mainMenuSecimMSG() {
+    public static String mainMenuSecim() {
         return "Duyurular için 1'i\nNotlar için 2'i\nSınavlar için 3'ü\nDers programınız için 4'ü\nDevamsızlık bilgileriniz için 5'i giriniz:";
     }
 
-    public static String girisKullaniciMSG() {
+    public static String girisKullanici() {
         return "Lütfen giriş yapmak için kullanıcı adınızı giriniz:";
     }
 
-    public static String girisBulunamadiMSG() {
+    public static String girisBulunamadi() {
         return "Kullanıcı adı bulunamadı.";
     }
 
-    public static String girisSifreMSG() {
+    public static String girisSifre() {
         return "Lütfen şifrenizi giriniz:";
     }
 
-    public static String girisBasariliMSG() {
+    public static String girisBasarili() {
         return "Giriş başarılı.";
     }
 
-    public static String girisHataliMSG() {
+    public static String girisHatali() {
         return "Şifre yanlış girildi.";
     }
 
-    public static String menulerSecimHataMSG() {
+    public static String menulerSecimHata() {
         return "Hatalı giriş yapıldı.";
     }
 

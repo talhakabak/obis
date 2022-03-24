@@ -1,11 +1,9 @@
 package obis;
 
 import admin.Database;
-
 import java.util.Scanner;
 
-public class Menuler extends Mesaj {
-    Database DB = new Database();
+public class Menuler {
     String[] kullanici;
     Menuler(String[] i) {
         kullanici = i;
@@ -16,7 +14,7 @@ public class Menuler extends Mesaj {
         boolean i = false;
         do{
             try {
-                System.out.println(mainMenuSecimMSG());
+                System.out.println(Mesaj.mainMenuSecim());
                 secim = menuScan.nextByte();
                 switch (secim) {
                     case 1 -> duyurular(kullanici[4]);
@@ -24,11 +22,11 @@ public class Menuler extends Mesaj {
                     case 3 -> sinavlar();
                     case 4 -> program();
                     case 5 -> devamsizlik();
-                    default -> throw new Exception(menulerSecimHataMSG());
+                    default -> throw new Exception(Mesaj.menulerSecimHata());
                 }
             } catch (Exception e){
                 menuScan.nextLine();
-                System.out.println(menulerSecimHataMSG());
+                System.out.println(Mesaj.menulerSecimHata());
                 i = true;
             }
         }while(i);
@@ -36,14 +34,14 @@ public class Menuler extends Mesaj {
     }
 
     public void duyurular(String bolum) {
-        for (String[] strings : DB.duyurular) {//duyuruları kontrol eder
+        for (String[] strings : Database.duyurular) {//duyuruları kontrol eder
             if (bolum.equals(strings[0])) {//duyurunun bölüm kısmı eşleşirse çalışır
                 for (int r = 1; r < strings.length; r++) {//duyuruyu yazdırır
                     System.out.println(strings[r]);
                 }
             }
         }
-        bekle(3000);
+        Mesaj.bekle(3000);
         menuSecim();
     }
 
