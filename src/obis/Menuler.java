@@ -3,39 +3,44 @@ package obis;
 import java.util.Scanner;
 
 public class Menuler extends Mesaj {
-    String kullanici;
-
-    Menuler(String i) {
+    Admin DB = new Admin();
+    String[] kullanici;
+    Menuler(String[] i) {
         kullanici = i;
     }
     public void menuSecim(){
         Scanner menuScan = new Scanner(System.in);
-        int secim = 0;
-        boolean i = true;
+        int secim;
+        boolean i = false;
         do{
             try {
                 System.out.println(mainMenuSecimMSG());
                 secim = menuScan.nextByte();
-                i = false;
+                switch (secim) {
+                    case 1 -> duyurular(kullanici[4]);
+                    case 2 -> notlar();
+                    case 3 -> sinavlar();
+                    case 4 -> program();
+                    case 5 -> devamsizlik();
+                    default -> throw new Exception(menulerSecimHataMSG());
+                }
             } catch (Exception e){
                 menuScan.nextLine();
                 System.out.println(menulerSecimHataMSG());
+                i = true;
             }
         }while(i);
-        switch (secim) {
-            case 1 -> duyurular();
-            case 2 -> notlar();
-            case 3 -> sinavlar();
-            case 4 -> program();
-            case 5 -> devamsizlik();
-            default -> menuSecim();
-        }
         menuScan.close();
     }
 
-    public void duyurular() {
-        Duyurular duyuru = new Duyurular(kullanici);
-
+    public void duyurular(String bolum) {
+        for (String[] strings : DB.duyurular) {//duyuruları kontrol eder
+            if (bolum.equals(strings[0])) {//duyurunun bölüm kısmı eşleşirse çalışır
+                for (int r = 1; r < strings.length; r++) {//duyuruyu yazdırır
+                    System.out.println(strings[r]);
+                }
+            }
+        }
     }
 
     public void notlar() {

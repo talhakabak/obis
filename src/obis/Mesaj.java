@@ -11,7 +11,7 @@ public class Mesaj {
     }
 
     public static String mainMenuSecimMSG() {
-        return "Menü seç";
+        return "Duyurular için 1'i\nNotlar için 2'i\nSınavlar için 3'ü\nDers programınız için 4'ü\nDevamsızlık bilgileriniz için 5'i giriniz:";
     }
 
     public static String girisKullaniciMSG() {
@@ -34,7 +34,7 @@ public class Mesaj {
         return "Şifre yanlış girildi.";
     }
 
-    public  static String menulerSecimHataMSG() {
+    public static String menulerSecimHataMSG() {
         return "Hatalı giriş yapıldı.";
     }
 }

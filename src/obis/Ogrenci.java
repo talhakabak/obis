@@ -5,16 +5,16 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class Ogrenci {
-    String kullanici;
-    String sifre;
-    String isim;
-    String soyisim;
-    String bolum;
-    String ogrenciMail;
+//    kullanici = ogrenci.ogrenciGiris[0];
+//    sifre = ogrenci.ogrenciGiris[1];
+//    isim = ogrenci.ogrenciGiris[2];
+//    soyisim = ogrenci.ogrenciGiris[3];
+//    bolum = ogrenci.ogrenciGiris[4];
+//    ogrenciMail = ogrenci.ogrenciGiris[5];
 
     String[] ogrenciGiris = {" ", " ", " ", " ", " ", " "}; //Öğrenci bilgilerinin saklandığı kısım
     String[] ogrenci1 = {"111", "123", "Talha", "Kabak", "BP", "talha.kabak@ogr.mail.com"};
-    String[] ogrenci2 = {"222", "234", "Emir Taha", "Karcı", "BP", "emir.karci@ogr.mail.com"};
+    String[] ogrenci2 = {"222", "234", "Emir Taha", "Karcı", "BT", "emir.karci@ogr.mail.com"};
     String[] ogrenci3 = {"333", "345", "Emir", "Güner", "BP", "emir.guner@ogr.mail.com"};
 
     String[][] ogrenciler = {ogrenci1, ogrenci2, ogrenci3};
