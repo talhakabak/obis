@@ -1,8 +1,8 @@
-package obis;
+package API;
 
 public class Devamsizlik {
     String[] kullanici;
-    Devamsizlik(String[] i){
+    public Devamsizlik(String[] i){
         kullanici = i;
     }
 }

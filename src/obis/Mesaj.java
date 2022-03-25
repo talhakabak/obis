@@ -34,8 +34,16 @@ public class Mesaj {
         return "Şifre yanlış girildi.";
     }
 
-    public static String menulerSecimHata() {
+    public static String hataliGiris() {
         return "Hatalı giriş yapıldı.";
+    }
+
+    public static String duyuruBulunamadi() {
+        return "Duyuru bulunamadı. Lütfen geçerli bir duyuru numarası giriniz.";
+    }
+
+    public static String duyurularSecim() {
+        return "Geri dönmek için 0, Duyuruyu incelemek için duyuru numarasını giriniz:";
     }
 
     public static void bekle(int ms)

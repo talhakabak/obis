@@ -1,4 +1,4 @@
-package obis;
+package API;
 
 public class Sinavlar {
     String[] kullanici;

@@ -1,14 +1,11 @@
 package obis;
 
-import admin.Database;
+import API.Duyurular;
+
 import java.util.Scanner;
 
 public class Menuler {
-    String[] kullanici;
-    Menuler(String[] i) {
-        kullanici = i;
-    }
-    public void menuSecim(){
+    public static void menuSecim(String[] kullanici){
         Scanner menuScan = new Scanner(System.in);
         int secim;
         boolean i = false;
@@ -16,49 +13,40 @@ public class Menuler {
             try {
                 System.out.println(Mesaj.mainMenuSecim());
                 secim = menuScan.nextByte();
+                menuScan.nextLine();
                 switch (secim) {
-                    case 1 -> duyurular(kullanici[4]);
+                    case 1 -> {
+                        Duyurular.duyuruSec(kullanici);
+                        menuScan.close();
+                    }
                     case 2 -> notlar();
                     case 3 -> sinavlar();
                     case 4 -> program();
                     case 5 -> devamsizlik();
-                    default -> throw new Exception(Mesaj.menulerSecimHata());
+                    default -> throw new Exception(Mesaj.hataliGiris());
                 }
             } catch (Exception e){
-                menuScan.nextLine();
-                System.out.println(Mesaj.menulerSecimHata());
+                System.out.println(Mesaj.hataliGiris());
                 i = true;
             }
         }while(i);
         menuScan.close();
     }
 
-    public void duyurular(String bolum) {
-        for (String[] strings : Database.duyurular) {//duyuruları kontrol eder
-            if (bolum.equals(strings[0])) {//duyurunun bölüm kısmı eşleşirse çalışır
-                for (int r = 1; r < strings.length; r++) {//duyuruyu yazdırır
-                    System.out.println(strings[r]);
-                }
-            }
-        }
-        Mesaj.bekle(3000);
-        menuSecim();
+    public static void notlar() {
+
     }
 
-    public void notlar() {
-        Notlar not = new Notlar(kullanici);
+    public static void sinavlar() {
+
     }
 
-    public void sinavlar() {
-        Sinavlar sinav = new Sinavlar(kullanici);
+    public static void program() {
+
     }
 
-    public void program() {
-        Program program_ = new Program(kullanici);
-    }
+    public static void devamsizlik() {
 
-    public void devamsizlik() {
-        Devamsizlik devamsiz = new Devamsizlik(kullanici);
     }
 
 }

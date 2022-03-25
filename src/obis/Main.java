@@ -1,28 +1,14 @@
 package obis;
 
+
 public class Main{
 
     public static void main(String[] args) {
-        anaMenu(baslangic());
-    }
-
-    public static String[] baslangic() {
-        Ogrenci ogrenci = new Ogrenci();
-        Giris giris = new Giris(ogrenci.girisBilgiAl()); //doğru giriş bilgileri gönderildi.
-        System.out.println(Mesaj.mainAcilis());
-        do {
-            giris.girisYap();
-            if (giris.cevrimici) {
-                ogrenci.ogrenciBilgi(giris.logKullanici);
-                System.out.println(Mesaj.mainCevrimici(ogrenci.ogrenciGiris[2]));
-            }
-        } while (!giris.cevrimici);
-        return ogrenci.ogrenciGiris;
+        anaMenu(Baslangic.baslangic());
     }
 
     public static void anaMenu(String[] kullanici){
-        Menuler menu = new Menuler(kullanici);
-        menu.menuSecim();
+        Menuler.menuSecim(kullanici);
     }
 }
 
