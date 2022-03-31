@@ -10,9 +10,7 @@ public class Mesaj {
         return "Hoşgeldin " + kullaniciadi;
     }
 
-    public static String mainMenuSecim() {
-        return "Duyurular için 1'i\nNotlar için 2'i\nSınavlar için 3'ü\nDers programınız için 4'ü\nDevamsızlık bilgileriniz için 5'i giriniz:";
-    }
+    public static String mainMenuSecim() { return "Çıkış yapmak için 0, sayfalara gitmek için sayfa numarasını giriniz:"; }
 
     public static String girisKullanici() {
         return "Lütfen giriş yapmak için kullanıcı adınızı giriniz:";
@@ -42,18 +40,16 @@ public class Mesaj {
         return "Duyuru bulunamadı. Lütfen geçerli bir duyuru numarası giriniz.";
     }
 
-    public static String duyurularSecim() {
-        return "Geri dönmek için 0, Duyuruyu incelemek için duyuru numarasını giriniz:";
+    public static String duyurularSecim() { return "Ana sayfaya geri dönmek için 0, duyuruyu incelemek için duyuru numarasını giriniz:"; }
+
+    public static String duyuruGeriDon() {
+        return "Ana sayfaya geri dönmek için 0, Geri dönmek için 9'u girin:";
     }
 
-    public static void bekle(int ms)
-    {
-        try
-        {
+    public static void bekle(int ms) {
+        try {
             Thread.sleep(ms);
-        }
-        catch(InterruptedException ex)
-        {
+        } catch (InterruptedException ex) {
             Thread.currentThread().interrupt();
         }
     }

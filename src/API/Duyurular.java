@@ -28,7 +28,7 @@ public class Duyurular {
         }
         do {
             try {
-                System.out.println(Mesaj.duyurularSecim());
+                System.out.print(Mesaj.duyurularSecim());
                 duyuruSecim = duyuruScan.nextByte();
                 r = duyuruSecim;
                 duyuruScan.nextLine();
@@ -41,8 +41,10 @@ public class Duyurular {
                         }
                     }
                     Mesaj.bekle(1000);
+                    System.out.print(Mesaj.duyuruGeriDon());
                 }
             } catch (Exception e) {
+                duyuruScan.nextLine();
                 System.out.println(Mesaj.hataliGiris());
             }
         } while (r != 0);

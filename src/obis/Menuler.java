@@ -5,13 +5,19 @@ import API.Duyurular;
 import java.util.Scanner;
 
 public class Menuler {
+    static String[] menuler = {"Duyurular", "Notlar", "Sınavlar", "Ders Programı", "Devamsızlık"};
     public static void menuSecim(String[] kullanici){
         Scanner menuScan = new Scanner(System.in);
         int secim;
         boolean i = false;
         do{
             try {
-                System.out.println(Mesaj.mainMenuSecim());
+                int b = 1;
+                for(String strings : menuler){
+                    System.out.println(strings + " -> " + b);
+                    b++;
+                }
+                System.out.print(Mesaj.mainMenuSecim());
                 secim = menuScan.nextByte();
                 menuScan.nextLine();
                 switch (secim) {
