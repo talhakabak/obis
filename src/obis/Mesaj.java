@@ -42,10 +42,6 @@ public class Mesaj {
 
     public static String duyurularSecim() { return "Ana sayfaya geri dönmek için 0, duyuruyu incelemek için duyuru numarasını giriniz:"; }
 
-    public static String duyuruGeriDon() {
-        return "Ana sayfaya geri dönmek için 0, Geri dönmek için 9'u girin:";
-    }
-
     public static void bekle(int ms) {
         try {
             Thread.sleep(ms);

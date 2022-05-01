@@ -10,25 +10,30 @@ import java.util.Scanner;
 public class Duyurular {
 
     public static void duyuruSec(String[] kullanici) {
+        System.out.println("\n\n");
         String bolum = kullanici[4];
         String[][] bolumDuyurular = new String[10][2];
         Scanner duyuruScan = new Scanner(System.in);
         byte duyuruSecim;
-        byte secimNo = 1;
-        byte b = 0;
-        int r = 2;
-        for (String[] strings : Database.duyurular) {//duyuruları kontrol eder
-            if (bolum.equals(strings[0])) {//duyurunun bölüm kısmı eşleşirse çalışır
-                bolumDuyurular[b][0] = strings[1];
-                bolumDuyurular[b][1] = strings[2];
-                b++;
-                System.out.println(strings[1] + " -> " + secimNo);
-                secimNo++;
-            }
-        }
+        byte secimNo;
+        byte b;
+        int r;
         do {
+            System.out.println("\n\n");
+            secimNo = 1;
+            b = 0;
+            r = 2;
+            for (String[] strings : Database.duyurular) {//duyuruları kontrol eder
+                if (bolum.equals(strings[0])) {//duyurunun bölüm kısmı eşleşirse çalışır
+                    bolumDuyurular[b][0] = strings[1];
+                    bolumDuyurular[b][1] = strings[2];
+                    b++;
+                    System.out.println(strings[1] + " -> " + secimNo);
+                    secimNo++;
+                }
+            }
+            System.out.print(Mesaj.duyurularSecim());
             try {
-                System.out.print(Mesaj.duyurularSecim());
                 duyuruSecim = duyuruScan.nextByte();
                 r = duyuruSecim;
                 duyuruScan.nextLine();
@@ -41,13 +46,13 @@ public class Duyurular {
                         }
                     }
                     Mesaj.bekle(1000);
-                    System.out.print(Mesaj.duyuruGeriDon());
                 }
             } catch (Exception e) {
                 duyuruScan.nextLine();
                 System.out.println(Mesaj.hataliGiris());
             }
         } while (r != 0);
+        System.out.println("\n\n");
         Menuler.menuSecim(kullanici);
     }
 }
