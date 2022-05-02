@@ -1,7 +1,6 @@
 package API;
 
 import admin.Database;
-import obis.Menuler;
 import obis.Mesaj;
 
 import java.util.Objects;
@@ -53,6 +52,5 @@ public class Duyurular {
             }
         } while (r != 0);
         System.out.println("\n\n");
-        Menuler.menuSecim(kullanici);
     }
 }

@@ -5,6 +5,7 @@ import API.Ogrenci;
 
 public class Baslangic {
     public static String[] baslangic() {
+        System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         Giris giris = new Giris();//doğru giriş bilgileri gönderildi.
         System.out.println(Mesaj.mainAcilis());
         do {
