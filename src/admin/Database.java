@@ -40,4 +40,26 @@ public class Database {
 
     public static double[][] dersNotlari = {dersNot1, dersNot2, dersNot3, dersNot4, dersNot5,dersNot6,dersNot7,dersNot8,dersNot9};
 
+
+    public static String[] gunler = {"Pazartesi","Salı", "Çarşamba", "Perşembe", "Cuma"};
+    public static String[] pazartesiBT = {"BT","201", "202"};
+    public static String[] saliBT = {"BT"};
+    public static String[] carsambaBT = {"BT","205"};
+    public static String[] persembeBT = {"BT"};
+    public static String[] cumaBT = {"BT","205", "201"};
+
+    public static String[] pazartesiBP = {"BP","203", "204"};
+    public static String[] saliBP = {"BP"};
+    public static String[] carsambaBP = {"BP"};
+    public static String[] persembeBP = {"BP","205"};
+    public static String[] cumaBP = {"BP","203", "205"};
+
+
+    //public static String[][] programDers = {"Bölüm", "PazartesiDers", "SalıDers", "ÇarşambaDers", "PerşembeDers", "CumaDers"};
+
+    public static String[][] programBT = {pazartesiBT,saliBT,carsambaBT,persembeBT,cumaBT};
+    public static String[][] programBP = {pazartesiBP,saliBP,carsambaBP,persembeBP,cumaBP};
+
+    public static String[][][] programlar = {programBT,programBP};
+
 }

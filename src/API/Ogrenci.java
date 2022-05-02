@@ -10,11 +10,11 @@ public class Ogrenci {
 
     public static String[] ogrenciOnline = {" ", " ", " ", " ", " ", " "}; //Öğrenci bilgilerinin saklandığı kısım
 
-    public static HashMap<String, String> girisBilgileri = new HashMap<>();//Giriş bilgileri burada tutulur.
+    public static HashMap<String, String> girisBilgileri = new HashMap<>();//Giriş bilgileri burada tutulur
 
     public Ogrenci() {
         for (String[] strings : Database.ogrenciler)
-            girisBilgileri.put(strings[0], strings[1]);//Giriş bilgilerini günceller
+            girisBilgileri.put(strings[0], strings[1]);//Giriş bilgilerini HashMap içerisine atar
     }
 
     public static void ogrenciBilgi(String online) { //Giriş yapan öğrencinin bilgilerini alır

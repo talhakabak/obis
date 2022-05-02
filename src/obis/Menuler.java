@@ -2,6 +2,7 @@ package obis;
 
 import API.Duyurular;
 import API.Notlar;
+import API.Program;
 
 import java.util.Scanner;
 
@@ -28,7 +29,7 @@ public class Menuler {
                         case 1 -> Duyurular.duyuruSec(kullanici);
                         case 2 -> Notlar.notGetir(kullanici);
                         case 3 -> sinavlar();
-                        case 4 -> program();
+                        case 4 -> Program.programGetir(kullanici);
                         case 5 -> devamsizlik();
                         default -> throw new Exception(Mesaj.hataliGiris());
                     }
@@ -42,10 +43,6 @@ public class Menuler {
     }
 
     public static void sinavlar() {
-
-    }
-
-    public static void program() {
 
     }
 

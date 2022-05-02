@@ -1,8 +1,42 @@
 package API;
 
+import admin.Database;
+import obis.Mesaj;
+
+import java.util.Scanner;
 public class Program {
-    String[] kullanici;
-    Program(String[] i){
-        kullanici = i;
+    public static void programGetir(String[] kullanici){
+        int gun = 0;
+        System.out.println("\n\n");
+        String bolum = kullanici[4];
+        for(String[][] bolumProgramlar : Database.programlar){
+            for (String[] program : bolumProgramlar){
+                if (bolum.equals(program[0])){
+                    System.out.print(Database.gunler[gun]);
+                    if (program.length > 1){
+                        System.out.print(" günündeki dersleriniz:");
+                        System.out.println();
+                        for (String derskodu : program){
+                            for (String[] ders : Database.dersler){
+                                if (ders[1].equals(derskodu)){
+                                    if (!derskodu.equals(bolum)){
+                                        System.out.println(ders[2]);
+                                    }
+                                }
+
+                                }
+                            }
+                        System.out.println("\n");
+                    }
+                    else{
+                        System.out.println(" gününde dersiniz bulunmuyor.\n");
+                    }
+                    gun++;
+                }
+            }
+        }
+        System.out.print(Mesaj.menuyeDon());
+        Scanner scan = new Scanner(System.in);
+        scan.nextLine();
     }
 }
