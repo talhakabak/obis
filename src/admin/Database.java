@@ -62,4 +62,21 @@ public class Database {
 
     public static String[][][] programlar = {programBT,programBP};
 
+
+    //public static String[] dersNot = {"ogrenci", "DersNo", "uygulama devamsızlık", "teorik devamssızlık"};
+
+    public static String[] devamsizlik1 = {(ogrenci1[0]), (ders3[1]), "1","3"};
+    public static String[] devamsizlik2 = {(ogrenci1[0]), (ders4[1]), "0","0"};
+    public static String[] devamsizlik3 = {(ogrenci1[0]), (ders5[1]), "4","4"};
+
+    public static String[] devamsizlik4 = {(ogrenci2[0]), (ders1[1]), "5","3"};
+    public static String[] devamsizlik5 = {(ogrenci2[0]),(ders2[1]), "6","5"};
+    public static String[] devamsizlik6 = {(ogrenci2[0]), (ders5[1]), "7","8"};
+
+    public static String[] devamsizlik7 = {(ogrenci3[0]),(ders3[1]), "5","7"};
+    public static String[] devamsizlik8 = {(ogrenci3[0]), (ders4[1]), "3","4"};
+    public static String[] devamsizlik9= {(ogrenci3[0]), (ders5[1]), "6","0"};
+
+    public static String[][] devamsizliklar = {devamsizlik1, devamsizlik2, devamsizlik3, devamsizlik4, devamsizlik5,devamsizlik6,devamsizlik7,devamsizlik8,devamsizlik9};
+
 }

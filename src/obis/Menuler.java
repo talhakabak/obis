@@ -1,8 +1,6 @@
 package obis;
 
-import API.Duyurular;
-import API.Notlar;
-import API.Program;
+import API.*;
 
 import java.util.Scanner;
 
@@ -28,9 +26,9 @@ public class Menuler {
                         case 0 -> {}
                         case 1 -> Duyurular.duyuruSec(kullanici);
                         case 2 -> Notlar.notGetir(kullanici);
-                        case 3 -> sinavlar();
+                        case 3 -> Sinavlar.sinavlarGetir(kullanici);
                         case 4 -> Program.programGetir(kullanici);
-                        case 5 -> devamsizlik();
+                        case 5 -> Devamsizlik.devamsizlikGetir(kullanici);
                         default -> throw new Exception(Mesaj.hataliGiris());
                     }
                 } catch (Exception e){
@@ -42,12 +40,8 @@ public class Menuler {
 
     }
 
-    public static void sinavlar() {
 
-    }
 
-    public static void devamsizlik() {
 
-    }
 
 }
