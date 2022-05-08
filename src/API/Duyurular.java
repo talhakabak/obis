@@ -38,7 +38,7 @@ public class Duyurular {
                 duyuruScan.nextLine();
                 if (r != 0) {
                     for (int i = 0; i < bolumDuyurular[duyuruSecim - 1].length; i++) {
-                        if(!Objects.equals(bolumDuyurular[duyuruSecim - 1][i], null)) System.out.println(bolumDuyurular[duyuruSecim - 1][i]);
+                        if(!Objects.equals(bolumDuyurular[duyuruSecim - 1][i], null)) System.out.println("\n" + bolumDuyurular[duyuruSecim - 1][i]);
                         else {
                             System.out.println(Mesaj.duyuruBulunamadi());
                             break;
