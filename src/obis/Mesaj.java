@@ -1,33 +1,54 @@
 package obis;
 
 
-public class Mesaj extends Main {
-    public String mainAcilis() {//Main
+public class Mesaj {
+    public static String mainAcilis() {
         return "Öğrenci Bilgi Sistemine Hoşgeldiniz";
     }
 
-    public String mainCevrimici(String kullaniciadi) {
+    public static String mainCevrimici(String kullaniciadi) {
         return "Hoşgeldin " + kullaniciadi;
     }
 
-    public String girisKullanici() {
+    public static String mainMenuSecim() { return "Çıkış yapmak için 0, sayfalara gitmek için sayfa numarasını giriniz:"; }
+
+    public static String girisKullanici() {
         return "Lütfen giriş yapmak için kullanıcı adınızı giriniz:";
     }
 
-    public String girisBulunamadi() {
+    public static String girisBulunamadi() {
         return "Kullanıcı adı bulunamadı.";
     }
 
-    public String girisSifre() {
+    public static String girisSifre() {
         return "Lütfen şifrenizi giriniz:";
     }
 
-    public String girisBasarili() {
+    public static String girisBasarili() {
         return "Giriş başarılı.";
     }
 
-    public String girisHatali() {
+    public static String girisHatali() {
         return "Şifre yanlış girildi.";
     }
 
+    public static String hataliGiris() {
+        return "Hatalı giriş yapıldı.";
+    }
+
+    public static String duyuruBulunamadi() {
+        return "Duyuru bulunamadı. Lütfen geçerli bir duyuru numarası giriniz.";
+    }
+
+    public static String duyurularSecim() { return "Ana sayfaya geri dönmek için 0, duyuruyu incelemek için duyuru numarasını giriniz:"; }
+    public static String menuyeDon() { return "Ana sayfaya geri dönmek için enter'a basınız"; }
+
+
+    public static void bekle(int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+    }
 }
