@@ -51,7 +51,7 @@ public class Sinavlar {
         if (gunler5.length()>15)  System.out.println(gunler5);
         else System.out.println(gunler5+"  Yok");
 
-        System.out.println(Mesaj.duyurularEkleSil());
+        System.out.println(Mesaj.sinavlarEkleSil());
         ekleSilprogram = programScan.nextLine();
         if (ekleSilprogram.equals(arti)) sinavCek.ekleProgram();
         if (ekleSilprogram.equals(eksi)) sinavCek.cikarMetotProgram();

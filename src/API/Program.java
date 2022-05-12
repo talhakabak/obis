@@ -52,7 +52,7 @@ public class Program {
         if (gunler5.length()>10)  System.out.println(gunler5);
         else System.out.println(gunler5+" Ders Yok");
 
-        System.out.println(Mesaj.duyurularEkleSil());
+        System.out.println(Mesaj.programEkleSil());
         ekleSilprogram = programScan.nextLine();
         if (ekleSilprogram.equals(arti)) programCek.ekleProgram();
         if (ekleSilprogram.equals(eksi)) programCek.cikarMetotProgram();

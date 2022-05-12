@@ -1,7 +1,6 @@
 package obis;
 
 
-import API.*;
 import admin.DatabaseDevamsizlik;
 import admin.DatabaseDuyuru;
 import admin.DatabaseNotlar;

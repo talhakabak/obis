@@ -38,7 +38,7 @@ public class Devamsizlik {
 
             }
         }
-        System.out.println("\n"+Mesaj.duyurularEkleSil());
+        System.out.println("\n"+Mesaj.devamsizlikEkleSil());
         ekleSildevamsizlik = programScan.nextLine();
         if (ekleSildevamsizlik.equals(arti)) devamsizlikcek.ekleDevamsizlik();
         if (ekleSildevamsizlik.equals(eksi)) devamsizlikcek.cikarMetotDevamsizlik();

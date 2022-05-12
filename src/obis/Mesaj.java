@@ -41,6 +41,10 @@ public class Mesaj {
     }
 
     public static String duyurularSecim() { return "Ana sayfaya geri dönmek için 0, duyuruyu incelemek için duyuru numarasını giriniz:"; }
+    public static String devamsizlikEkleSil() { return "Devamsızlık eklemek için artı(+) silmek için eksi,(-) geçmek için enter a basınız"; }
+    public static String notlarEkleSil() { return "Not eklemek için artı(+) silmek için eksi,(-) geçmek için enter a basınız"; }
+    public static String programEkleSil() { return "Program eklemek için artı(+) silmek için eksi,(-) geçmek için enter a basınız"; }
+    public static String sinavlarEkleSil() { return "Sınav eklemek için artı(+) silmek için eksi,(-) geçmek için enter a basınız"; }
     public static String duyurularEkleSil() { return "Duyuru eklemek için artı(+) silmek için eksi,(-) geçmek için enter a basınız"; }
     public static String menuyeDon() { return "Ana sayfaya geri dönmek için enter'a basınız"; }
 

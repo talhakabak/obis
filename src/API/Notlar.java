@@ -58,7 +58,7 @@ public class Notlar {
 
             }
         }
-        System.out.println("\n"+Mesaj.duyurularEkleSil());
+        System.out.println("\n"+Mesaj.notlarEkleSil());
         ekleSilnotlar = programScan.nextLine();
         if (ekleSilnotlar.equals(arti)) notlarCek.eklenenNot();
         if (ekleSilnotlar.equals(eksi)) notlarCek.cikarMetotNot();
