@@ -1,8 +1,8 @@
-package API;
+package admin;
 
 import java.util.ArrayList;
 
-public class OgrenciDemo {
+public class DatabaseOgrenci {
     static int tekGirisOgrenci=0;
 
     EkleOgrenci ogrenciz1= new EkleOgrenci("111", "123", "Talha", "Kabak", "BP", "talha.kabak@ogr.mail.com");
@@ -19,12 +19,6 @@ public class OgrenciDemo {
 
             tekGirisOgrenci++;
         }
-    }
-
-    public void ogrenciGiris(){
-
-
-
     }
 
 }

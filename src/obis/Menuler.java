@@ -9,10 +9,11 @@ public class Menuler {
     public static void menuSecim(String[] kullanici){
         int secim = -1;
         Scanner menuScan = new Scanner(System.in);
-        DuyuruDemo ddemo = new DuyuruDemo();
-        ProgramDemo pdemo = new ProgramDemo();
-        SinavlarDemo sdemo = new SinavlarDemo();
-
+        Duyuru ddemo = new Duyuru();
+        Program pdemo = new Program();
+        Sinavlar sdemo = new Sinavlar();
+        Notlar ndemo = new Notlar();
+        Devamsizlik devamdemo = new Devamsizlik();
         do {
             System.out.println("\n\n");
             boolean i = false;
@@ -29,10 +30,10 @@ public class Menuler {
                     switch (secim) {
                         case 0 -> {}
                         case 1 -> ddemo.duyuruGiris(kullanici);
-                        case 2 -> Notlar.notGetir(kullanici);
+                        case 2 -> ndemo.notlarGiris(kullanici);
                         case 3 -> sdemo.sinavlarGetir(kullanici);
                         case 4 -> pdemo.programGiris(kullanici);
-                        case 5 -> Devamsizlik.devamsizlikGetir(kullanici);
+                        case 5 -> devamdemo.devamsizlikGiris(kullanici);
                         default -> throw new Exception(Mesaj.hataliGiris());
                     }
                 } catch (Exception e){

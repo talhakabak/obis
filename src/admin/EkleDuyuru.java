@@ -1,11 +1,11 @@
-package API;
+package admin;
 
 public class EkleDuyuru {
 
 
-    String bolum;
-    String baslik;
-    String anaMetin;
+   public String bolum;
+    public String baslik;
+    public String anaMetin;
 public EkleDuyuru(){}
     public EkleDuyuru( String bolum, String baslik, String anaMetin) {
         this.bolum = bolum;

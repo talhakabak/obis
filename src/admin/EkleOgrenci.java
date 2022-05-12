@@ -1,12 +1,12 @@
-package API;
+package admin;
 
 public class EkleOgrenci {
-    String kullanıcıNo;
-    String sifre;
-    String isim;
-    String soyisim;
-    String bolum;
-    String mail;
+    public String kullanıcıNo;
+    public String sifre;
+    public String isim;
+    public String soyisim;
+    public String bolum;
+    public String mail;
 
     public EkleOgrenci() {
     }

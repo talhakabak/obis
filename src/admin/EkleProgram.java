@@ -1,11 +1,11 @@
-package API;
+package admin;
 
 public class EkleProgram {
-    String bolum;
-    String dersno;
-    String dersadi;
-    String kredi;
-    String gunu;
+    public String bolum;
+    public String dersno;
+    public String dersadi;
+    public String kredi;
+    public String gunu;
 
     public EkleProgram(){}
     public EkleProgram( String bolum, String dersno, String dersadi, String kredi,String gunu) {
