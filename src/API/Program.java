@@ -16,25 +16,25 @@ public class Program {
         String ekleSilprogram;
         String arti="+";
         String eksi="-";
-        String gunler1="Pazartesi";
-        String gunler2="Sali";
-        String gunler3="Çarşamba";
-        String gunler4="Perşembe";
-        String gunler5="Cuma";
+        StringBuilder gunler1= new StringBuilder("Pazartesi");
+        StringBuilder gunler2= new StringBuilder("Sali");
+        StringBuilder gunler3= new StringBuilder("Çarşamba");
+        StringBuilder gunler4= new StringBuilder("Perşembe");
+        StringBuilder gunler5= new StringBuilder("Cuma");
         Scanner programScan = new Scanner(System.in);
 
         System.out.println("\n\n");
         String bolum = kullanici[4];
-            for(EkleProgram bolumProgramlar : programCek.programDizi){
+            for(EkleProgram bolumProgramlar : DatabaseProgram.programDizi){
 
 
             if(bolumProgramlar.bolum.equals(bolum)|| bolumProgramlar.bolum.length() >= 4) {
 
-                if (DatabaseDizi.gunler[0].equals(bolumProgramlar.gunu))  gunler1=gunler1+"/"+bolumProgramlar.dersadi+" / ";
-                if (DatabaseDizi.gunler[1].equals(bolumProgramlar.gunu))  gunler2=gunler2+"/"+bolumProgramlar.dersadi+" / ";
-                if (DatabaseDizi.gunler[2].equals(bolumProgramlar.gunu))  gunler3=gunler3+"/"+bolumProgramlar.dersadi+" / ";
-                if (DatabaseDizi.gunler[3].equals(bolumProgramlar.gunu))  gunler4=gunler4+"/"+bolumProgramlar.dersadi+" / ";
-                if (DatabaseDizi.gunler[4].equals(bolumProgramlar.gunu))  gunler5=gunler5+"/"+bolumProgramlar.dersadi+" / ";
+                if (DatabaseDizi.gunler[0].equals(bolumProgramlar.gunu))  gunler1.append("/").append(bolumProgramlar.dersadi).append(" / ");
+                if (DatabaseDizi.gunler[1].equals(bolumProgramlar.gunu))  gunler2.append("/").append(bolumProgramlar.dersadi).append(" / ");
+                if (DatabaseDizi.gunler[2].equals(bolumProgramlar.gunu))  gunler3.append("/").append(bolumProgramlar.dersadi).append(" / ");
+                if (DatabaseDizi.gunler[3].equals(bolumProgramlar.gunu))  gunler4.append("/").append(bolumProgramlar.dersadi).append(" / ");
+                if (DatabaseDizi.gunler[4].equals(bolumProgramlar.gunu))  gunler5.append("/").append(bolumProgramlar.dersadi).append(" / ");
 
 
 

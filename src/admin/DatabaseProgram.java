@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DatabaseProgram {
-    static int i=4,tekGirisProgram=0;
+    static int tekGirisProgram=0;
     EkleProgram programz1= new EkleProgram("BT", "201", "Bilişim Güvenliği", "3","Salı");
     EkleProgram programz2= new EkleProgram("BT", "202", "Ağ Temelleri", "5","Perşembe");
     EkleProgram programz3= new EkleProgram("BP", "203", "Matematik", "3","Cuma");
@@ -51,13 +51,7 @@ public class DatabaseProgram {
         programDizi.remove(silinceksayi);
 
     }
-    public void listeleMetotProgram(){
-        okuMetotProgram();
-        for (EkleProgram program : programDizi) {
-            System.out.println( program.bolum +" --- "+program.dersno+"----- "+program.dersadi+program.kredi);
-        }
 
-    }
     public void okuMetotProgram(){
         if (tekGirisProgram==0){
             programDizi.add(programz1);

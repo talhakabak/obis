@@ -4,7 +4,6 @@ import admin.DatabaseDuyuru;
 import admin.EkleDuyuru;
 import obis.Mesaj;
 
-import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -28,7 +27,7 @@ public class Duyuru {
            secimNo = 1;
            b = 0;
            r = 2;
-           for (EkleDuyuru duyuru : databaseCek.duyuruDizi) {//duyuruları kontrol eder
+           for (EkleDuyuru duyuru : DatabaseDuyuru.duyuruDizi) {//duyuruları kontrol eder
                if (bolum.equals(duyuru.bolum)) {//duyurunun bölüm kısmı eşleşirse çalışır
                    bolumDuyurular[b][0] = duyuru.baslik;
                    bolumDuyurular[b][1] = duyuru.anaMetin;

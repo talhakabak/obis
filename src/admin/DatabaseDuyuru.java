@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class DatabaseDuyuru {
 
-    static int i=4,tekGirisDuyuru=0;
+    static int tekGirisDuyuru=0;
     EkleDuyuru duyuruz1= new EkleDuyuru("BP","Ders Ertelendi","'Bilgisayar Programcılığı' bölümünün 'Matematik' dersi ertelendi");
     EkleDuyuru duyuruz2= new EkleDuyuru("BT","Ders Ertelendi","'Bilgisayar Teknolojisi' bölümünün 'Elektrik' dersi ertelendi");
     EkleDuyuru duyuruz3= new EkleDuyuru("BT","Etkinlik","'Bilgisayar Teknolojisi' bölümünün katılması önerilen seminer yarın 16:00'da");
@@ -47,13 +47,6 @@ public class DatabaseDuyuru {
         int silinceksayi =duyuruSilme.nextInt();
         System.out.println(silinceksayi);
         duyuruDizi.remove(silinceksayi);
-
-    }
-    public void listeleMetotDuyuru(){
-        okuMetotDuyuru();
-        for (EkleDuyuru duyuru : duyuruDizi) {
-            System.out.println( duyuru.bolum +" --- "+duyuru.baslik+": "+duyuru.anaMetin);
-        }
 
     }
 

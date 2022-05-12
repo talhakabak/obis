@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DatabaseDevamsizlik {
-    static int i=4,tekGirisDevamsizlik=0;
+    static int tekGirisDevamsizlik=0;
     EkleDevamsizlik devamsizlik1= new EkleDevamsizlik("111","203",1,3);
     EkleDevamsizlik devamsizlik2= new EkleDevamsizlik("111","204",3,4);
     EkleDevamsizlik devamsizlik3= new EkleDevamsizlik("111","205",6,5);

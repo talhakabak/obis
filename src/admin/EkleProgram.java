@@ -18,40 +18,20 @@ public class EkleProgram {
 
     }
 
-    public String getGunu() {
-        return gunu;
-    }
-
     public void setGunu(String gunu) {
         this.gunu = gunu;
-    }
-
-    public String getBolum() {
-        return bolum;
     }
 
     public void setBolum(String bolum) {
         this.bolum = bolum;
     }
 
-    public String getDersno() {
-        return dersno;
-    }
-
     public void setDersno(String dersno) {
         this.dersno = dersno;
     }
 
-    public String getDersadi() {
-        return dersadi;
-    }
-
     public void setDersadi(String dersadi) {
         this.dersadi = dersadi;
-    }
-
-    public String getKredi() {
-        return kredi;
     }
 
     public void setKredi(String kredi) {

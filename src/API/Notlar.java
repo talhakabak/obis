@@ -29,7 +29,7 @@ public class Notlar {
             if (strings.bolum.equals(bolum)){
                 System.out.printf("%-10s %-30s", strings.dersno, strings.dersadi);
                 //System.out.print("  " + strings[1] + "\t\t " + strings[2]);
-                for (EkleNotlar doubles : notlarCek.notDizi){
+                for (EkleNotlar doubles : DatabaseNotlar.notDizi){
                     if (kullanici[0].equals(doubles.ogrenci_kullanici) && strings.dersno.equals(doubles.dersno)){//bolume göre not getirir
                         if(doubles.but >= doubles.finalsinav){
                             notOrt = (doubles.vize + doubles.but)/2;

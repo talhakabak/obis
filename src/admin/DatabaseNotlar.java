@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DatabaseNotlar {
-    static int i=4,tekGirisDuyuru=0;
+    static int tekGirisDuyuru=0;
     EkleNotlar notlarz1= new EkleNotlar("111","203",70,90,-1);
     EkleNotlar notlarz2= new EkleNotlar("111","204",70,90,-1);
     EkleNotlar notlarz3= new EkleNotlar("111","205",70,90,-1);
