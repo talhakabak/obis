@@ -37,7 +37,7 @@ public class Menuler {
                         default -> throw new Exception(Mesaj.hataliGiris());
                     }
                 } catch (Exception e){
-                    System.out.println(Mesaj.hataliGiris());
+                    System.out.println(Mesaj.hataliGiris()+"\n");
                     i = true;
                 }
             }while(i);

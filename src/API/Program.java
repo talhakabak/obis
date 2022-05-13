@@ -17,7 +17,7 @@ public class Program {
         String arti="+";
         String eksi="-";
         StringBuilder gunler1= new StringBuilder("Pazartesi");
-        StringBuilder gunler2= new StringBuilder("Sali");
+        StringBuilder gunler2= new StringBuilder("Salı");
         StringBuilder gunler3= new StringBuilder("Çarşamba");
         StringBuilder gunler4= new StringBuilder("Perşembe");
         StringBuilder gunler5= new StringBuilder("Cuma");
